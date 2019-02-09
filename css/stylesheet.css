@@ -1,0 +1,182 @@
+@font-face {
+	font-family: "Kenny Future";
+	src: url("fonts/kenvector_future.ttf");
+	src: url("fonts/kenvector_future-webfont.woff") format("woff");
+}
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+li {
+  padding: 10px 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+
+body {
+	font-family: 'Kenny Future', arial, sans-serif;
+	font-size: 16px;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	cursor: default;
+}
+
+.wrapper {
+  position: absolute;
+  width: 512px;
+  height: 512px;
+  margin-top: 128px;
+  margin-left :512px ;
+    
+}
+
+
+/*CHANGE GAME SIZE HERE*/
+canvas {
+
+  position: absolute;
+  top: 0;
+  left: 0;
+  border: 1px solid black;
+  z-index: 1;
+  width: 512px;
+  height: 512px;
+}
+
+#menu {
+  position: absolute;
+  width: 512px;
+  height: 512px;
+  border: 1px solid black;
+  z-index: 2;
+  text-align: center;
+  background-color: grey;
+}
+#menu.main {
+  background-image: url('imgs/menuBckg.png');
+}
+#main {
+  display: none;
+  height: 60%;
+  overflow: auto;
+  margin: auto;
+  position: absolute;
+  top: 0; left: 0; bottom: 0; right: 0;
+}
+#main h1 {
+  color: white;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+
+
+#game-over {
+  display: none;
+  text-align: center;
+  padding-top: 50px;
+  z-index: 1;
+  width: 300px;
+  height: 300px;
+  overflow: auto;
+  margin: 106px;
+  position: absolute;
+  background-image: url('imgs/yellow_panel.png');
+  border-radius: 5px;
+}
+
+
+#pause-screen {
+  display: none;
+  text-align: center;
+  padding-top: 50px;
+  z-index: 1;
+  width: 300px;
+  height: 300px;
+  overflow: auto;
+  margin: 106px;
+  position: absolute;
+  background-image: url('imgs/yellow_panel.png');
+  border-radius: 5px;
+}
+
+#HUD {
+  /*display: none;*/
+  
+  z-index: 1;
+  width: 512px;
+  height: 512px;
+  overflow: auto;
+  position: absolute;
+  text-align: : right;
+}
+
+#HUD h4 {
+  float: left;
+  margin-left: 400px;
+  margin-top: -40px;
+  color: white;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+.button {
+  display: block;
+  width: 190px;
+  margin: 0 auto;
+  height: 49px;
+  line-height: 45px;
+  color: #EC992E;
+  font-weight: bold;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+  background-image: url('imgs/yellow_button00.png');
+  border-radius: 5px;
+}
+
+.HUDbutton {
+  display: block;
+  width: 49px;
+  height: 49px;
+  line-height: 45px;
+  color: #EC992E;
+  padding: 0px;
+  text-align: center;
+  font-size: 10px;
+  font-weight: normal;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+  background-image: url('imgs/yellow_button.png');
+  border-radius: 5px;
+
+}
+
+#pause {
+
+
+	margin-top : 10px;
+	margin-left: 10px;
+
+
+}
+
+.HUDbutton:hover {
+  background-color: #c89f00;
+  background-image: -webkit-linear-gradient(bottom, #c89f00 0%, #ffcc00 50%);
+  background-image:         linear-gradient(to bottom, #c89f00 0%, #ffcc00 50%);
+  border-radius: 5px;
+
+}
+.button:hover {
+  background-color: #cd5d12;
+  background-image: -webkit-linear-gradient(bottom, #c89f00 0%, #ffcc00 50%);
+  background-image:         linear-gradient(to bottom, #c89f00 0%, #ffcc00 50%);
+  border-radius: 5px;
+
+}
